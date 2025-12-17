@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?><ComponentSpec xmlns:clariah="http://www.clariah.eu/" xmlns:cue="http://www.clarin.eu/cmd/cues/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" isProfile="true" CMDVersion="1.2" CMDOriginalVersion="1.2" xsi:noNamespaceSchemaLocation="https://infra.clarin.eu/CMDI/1.x/xsd/cmd-component.xsd">
+    <Header>
+        <ID>clarin.eu:cr1:p_1761816151556</ID>
+        <Name>Letter</Name>
+        <Description>Generic elements for letters, using a combination of elements from EMLO template and the Correspondence Metadata Interchange Format (CMIF) and the generic components (using PiCo).</Description>
+        <Status>development</Status>
+    </Header>
+    <Component name="Letter">
+        <clariah:explanation src="documentation"/>
+        <Component name="Identifier">
+            <clariah:explanation src="documentation"/>
+            <Element name="identifierType">
+            </Element>
+            <Element name="identifierLabel">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="identifierUrl">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="schemeAgency" cue:hide="yes">
+                <clariah:explanation src="documentation"/>
+            </Element>
+        </Component>
+        <Component name="SourceBasicMetadata">
+            <Element name="nameOrTitle">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="additionalType">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="accessURL">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="landingPage">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="abstract">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="zoteroGroupItemLink">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Element name="pageRange"><!--cues--></Element>
+            <Element name="notesSource"><!--cues--></Element>
+            <Component name="Keywords" cue:hide="yes">
+                <clariah:explanation src="documentation"/>
+                <Component name="Identifier" cue:hide="yes">
+                    <clariah:explanation src="documentation"/>
+                    <Element name="identifierType" cue:hide="yes">
+                    </Element>
+                    <Element name="identifierLabel" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="identifierUrl" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="schemeAgency" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                </Component>
+            </Component>
+        </Component>
+        <Component name="Sender">
+            <clariah:explanation src="documentation"/>
+            <Element name="correspondenceAction" cue:hide="yes">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Component name="PersonObservation">
+                <clariah:explanation src="documentation"/>
+                <Element name="personAsText">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/></Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+            <Component name="LinkToReconstruction">
+                <Component name="Relationship">
+                    <Element name="authorizedForm" cue:class="skosType">
+						<clariah:autoCompleteURI>/app/letter-suriano-metadata/profile/clarin.eu:cr1:p_1758888743558/entity/person</clariah:autoCompleteURI>
+					</Element>
+                    <Element name="category" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="description">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="date" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                </Component>
+                <Component name="ReconstructionActivity" cue:hide="yes">
+                    <clariah:explanation src="documentation"/>
+                    <Element name="typeActivity">
+                        <clariah:explanation src="documentation"/></Element>
+                    <Element name="agent">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="startedAtTime">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="endedAtTime">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="noteReconstruction"><!--cues--></Element>
+                </Component>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+        </Component>
+        <Component name="Receiver">
+            <clariah:explanation src="documentation"/>
+            <Element name="correspondenceAction" cue:hide="yes">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Component name="PersonObservation">
+                <clariah:explanation src="documentation"/>
+                <Element name="personAsText">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+            <Component name="LinkToReconstruction">
+                <Component name="Relationship">
+					<Element name="authorizedForm" cue:class="skosType">
+						<clariah:autoCompleteURI>/app/letter-suriano-metadata/profile/clarin.eu:cr1:p_1758888743558/entity/person</clariah:autoCompleteURI>
+					</Element>
+                    <Element name="category" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="description">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="date" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                </Component>
+                <Component name="ReconstructionActivity" cue:hide="yes">
+                    <clariah:explanation src="documentation"/>
+                    <Element name="typeActivity">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="agent">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="startedAtTime">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="endedAtTime">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="noteReconstruction"><!--cues--></Element>
+                </Component>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+        </Component>
+        <Component name="PlaceSent">
+            <Element name="correspondenceAction" cue:hide="yes">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Component name="PlaceObservation">
+                <Element name="placeAsText">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+            <Component name="LinkToReconstruction">
+                <Component name="Relationship">
+					<Element name="authorizedForm" cue:class="skosType">
+						<clariah:autoCompleteURI>/app/letter-suriano-metadata/profile/clarin.eu:cr1:p_1761816151568/entity/place</clariah:autoCompleteURI>
+					</Element>
+                    <Element name="category" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="description">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="date" cue:hide="yes">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                </Component>
+                <Component name="ReconstructionActivity" cue:hide="yes">
+                    <clariah:explanation src="documentation"/>
+                    <Element name="typeActivity">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="agent">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="startedAtTime">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="endedAtTime">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="noteReconstruction"><!--cues--></Element>
+                </Component>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+        </Component>
+        <Component name="PlaceReceived" cue:hide="yes">
+            <Element name="correspondenceAction">
+                <clariah:explanation src="documentation"/>
+            </Element>
+        </Component>
+        <Component name="DateSent">
+            <Element name="correspondenceAction" cue:hide="yes">
+                <clariah:explanation src="documentation"/>
+                
+            </Element>
+            <Component name="DateObservation">
+                <Element name="dateAsWritten">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+            <Component name="DateReconstruction">
+                <clariah:explanation src="documentation"/>
+                <Element name="dateStart">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Element name="dateEnd">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Element name="calendar">
+                    
+                </Element>
+                <Element name="noteDate">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+        </Component>
+        <Component name="DateReceived" cue:hide="yes">
+            <clariah:explanation src="documentation"/>
+            <Element name="correspondenceAction">
+                <clariah:explanation src="documentation"/>
+            </Element>
+            <Component name="DateObservation">
+                <Element name="dateAsWritten">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+            <Component name="DateReconstruction">
+                <clariah:explanation src="documentation"/>
+                <Element name="dateStart">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Element name="dateEnd">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Element name="calendar">
+                    
+                </Element>
+                <Element name="noteDate">
+                    <clariah:explanation src="documentation"/>
+                </Element>
+                <Component name="Confidence">
+                    <Element name="confidenceValue">
+                        <clariah:explanation src="documentation"/>
+                    </Element>
+                    <Element name="confidenceScore"><!--cues--></Element>
+                </Component>
+            </Component>
+        </Component>
+        <Component name="FullText" cue:hide="yes">
+            <clariah:explanation src="documentation"/>
+            <Element name="letterText">
+                <clariah:explanation src="documentation"/>
+            </Element>
+        </Component>
+    </Component>
+</ComponentSpec>
