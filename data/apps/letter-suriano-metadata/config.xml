@@ -22,17 +22,23 @@
             <filter>true</filter>
           </nr>
           <sender>
-            <xpath>string(//cmdp:Sender/cmdp:SenderObservation/cmdp:senderAsText)</xpath>
-            <label>SenderNameAsWritten</label>
+            <xpath>string(//cmdp:Sender/cmdp:LinkToReconstruction/cmdp:Relationship/cmdp:authorizedForm)</xpath>
+            <label>SenderNormalized</label>
             <sort>true</sort>
             <filter>'select'</filter>
           </sender>
           <receiver>
-            <xpath>string(//cmdp:Receiver/cmdp:ReceiverObservation/cmdp:receiverAsText)</xpath>
-            <label>ReceiverNameAsWritten</label>
+            <xpath>string(//cmdp:Receiver/cmdp:LinkToReconstruction/cmdp:Relationship/cmdp:authorizedForm)</xpath>
+            <label>ReceiverNormalized</label>
             <sort>true</sort>
             <filter>'select'</filter>
           </receiver>
+          <mentionedIn>
+            <xpath>string(//cmdp:MentionedInLetter/cmdp:LinkToReconstruction/cmdp:Relationship/cmdp:authorizedForm)</xpath>
+            <label>MentionedInLetterNormalized</label>
+            <sort>true</sort>
+            <filter>'select'</filter>
+          </mentionedIn>
           <letterDate>
             <xpath>string(//cmdp:DateSent/cmdp:DateObservation/cmdp:dateAsWritten)</xpath>
             <label>DateSent</label>

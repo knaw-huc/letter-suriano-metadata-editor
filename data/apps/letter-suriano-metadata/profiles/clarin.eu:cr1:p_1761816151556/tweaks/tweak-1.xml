@@ -170,6 +170,62 @@
                 </Component>
             </Component>
         </Component>
+		<Component name="MentionedInLetter">
+			<clariah:explanation src="documentation"/>
+			<Element name="correspondenceAction" cue:hide="yes">
+				<clariah:explanation src="documentation"/>
+			</Element>
+			<Component name="PersonObservation">
+				<clariah:explanation src="documentation"/>
+				<Element name="personAsText">
+					<clariah:explanation src="documentation"/>
+				</Element>
+				<Component name="Confidence">
+					<Element name="confidenceValue">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="confidenceScore"><!--cues--></Element>
+				</Component>
+			</Component>
+			<Component name="LinkToReconstruction">
+				<Component name="Relationship">
+					<Element name="authorizedForm" cue:class="skosType">
+						<clariah:autoCompleteURI>/app/letter-suriano-metadata/profile/clarin.eu:cr1:p_1758888743558/entity/person</clariah:autoCompleteURI>
+					</Element>
+					<Element name="category" cue:hide="yes">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="description">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="date" cue:hide="yes">
+						<clariah:explanation src="documentation"/>
+					</Element>
+				</Component>
+				<Component name="ReconstructionActivity" cue:hide="yes">
+					<clariah:explanation src="documentation"/>
+					<Element name="typeActivity">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="agent">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="startedAtTime">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="endedAtTime">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="noteReconstruction"><!--cues--></Element>
+				</Component>
+				<Component name="Confidence">
+					<Element name="confidenceValue">
+						<clariah:explanation src="documentation"/>
+					</Element>
+					<Element name="confidenceScore"><!--cues--></Element>
+				</Component>
+			</Component>
+		</Component>
         <Component name="PlaceSent">
             <Element name="correspondenceAction" cue:hide="yes">
                 <clariah:explanation src="documentation"/>

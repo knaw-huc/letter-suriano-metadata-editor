@@ -1,4 +1,3 @@
-
 [app]
 name="letter-suriano-metadata"
 title="Letter-suriano-metadata Editor"
@@ -34,14 +33,20 @@ filter="true"
 #filter="true"
 
 [app.prof.letter.list.sender]
-xpath="string(//cmdp:Sender/cmdp:SenderObservation/cmdp:senderAsText)"
-label="SenderNameAsWritten"
+xpath="string(//cmdp:Sender/cmdp:LinkToReconstruction/cmdp:Relationship/cmdp:authorizedForm)"
+label="SenderNormalized"
 sort="true"
 filter="'select'"
 
 [app.prof.letter.list.receiver]
-xpath="string(//cmdp:Receiver/cmdp:ReceiverObservation/cmdp:receiverAsText)"
-label="ReceiverNameAsWritten"
+xpath="string(//cmdp:Receiver/cmdp:LinkToReconstruction/cmdp:Relationship/cmdp:authorizedForm)"
+label="ReceiverNormalized"
+sort="true"
+filter="'select'"
+
+[app.prof.letter.list.mentionedIn]
+xpath="string(//cmdp:MentionedInLetter/cmdp:LinkToReconstruction/cmdp:Relationship/cmdp:authorizedForm)"
+label="MentionedInLetterNormalized"
 sort="true"
 filter="'select'"
 
